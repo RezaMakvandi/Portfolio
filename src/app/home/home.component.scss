@@ -3,18 +3,7 @@ $container_light: #f9f9f948;
     width: calc(100% - 260px);
     float: right;
 }
-.landing_container{
-    height: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: row;
-}
-.landing_grid{
-    //height: 100vh;
-    align-content: space-around;
-    align-self: end;
-    flex-grow: 1;
-}
+
 .person_img{
     width: auto;
     max-width: 100%;
@@ -84,7 +73,7 @@ $container_light: #f9f9f948;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     padding: 2%;
     background-color: $container_light;
     position: relative;
@@ -117,9 +106,4 @@ $container_light: #f9f9f948;
     border-left: 5px solid #fdc42c;
     background-color: #fefefe47;
     padding: 10px;
-}
-.github{
-    position: absolute;
-    bottom: 0;
-    width: 98%;
 }

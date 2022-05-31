@@ -34,7 +34,7 @@ export class SidebarComponent implements OnInit, AfterViewInit {
     private bpObserver:BreakpointObserver, private menuSvc:MenuService) {
     this.sidebarSvc.open.subscribe((val)=>{
       if(val === true){
-        //this.openSidebar();
+       
       }
     })
    }
@@ -76,7 +76,6 @@ export class SidebarComponent implements OnInit, AfterViewInit {
   }
   scroll(target:string){
     this.menuSvc.target.next(target)
-    //this.closeSidebar()
   }
  
 }
