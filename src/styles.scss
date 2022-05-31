@@ -1,0 +1,28 @@
+
+@font-face {
+    font-family: 'Amaranth';
+    src: url('assets/fonts/Amaranth-Regular.ttf') format('eot'),  url('assets/fonts/Amaranth-Regular.ttf') format('truetype');
+    
+}
+$fontFamily:"Amaranth", "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$fontSize:14px;
+body{
+    background-color: #fee725;
+    color: #2d2d2d;
+    font-family:$fontFamily;
+    font-size: $fontSize;
+    margin: 0;
+}
+::-webkit-scrollbar{
+    background-color: #fee725;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #5c540e;
+    border-radius: 4px;
+}
+*{
+    /* scrollbar style For Firefox */
+    scrollbar-color: #5c540e #fee725;
+    scrollbar-width: thin;
+  }

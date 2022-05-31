@@ -1,0 +1,159 @@
+<div class="home_container" #home_container >
+
+    <sidebar></sidebar>
+    <!-- <div class="landing_container" #landing_container>
+        <div class="grid grid-nogutter landing_grid">
+            <div class="col-12 md:col-9 xl:col-6 text-center">
+                <img src="assets/man.png" class="person_img">
+            </div>
+            <div class="col-12 md:col-3 xl:col-6 p-2">
+                <div class="title_container">
+                    <h1 class="myname">Reza Makvandi</h1>
+                    <h2>Frontend Developer</h2>
+                    <p>Let's show the world with a better interface!</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="about_container" #aboutContainer id="about_container">
+        <h2 class="container_title">About Me</h2>
+        <div class="grid grid-nogutter">
+            <div class="col-12 md:col-12 xl:col-12 p-2 text-center">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="skills_container" #skillsContainer>
+        <h2 class="container_title">Skills</h2>
+        <div class="grid grid-nogutter">
+            <div class="col-12 md:col-6 xl:col-6 p-2">
+               <div class="skill_card">
+                <label class="skill_label">Angular</label>
+                <rzProgress [progressValue]="95" [showValue]="true"></rzProgress>
+
+                <label  class="skill_label">Javascript (TS)</label>
+                <rzProgress [progressValue]="100" [showValue]="true"></rzProgress>
+
+                <label  class="skill_label">CSS - SASS</label>
+                <rzProgress [progressValue]="100" [showValue]="true"></rzProgress>
+
+                <label  class="skill_label">HTML</label>
+                <rzProgress [progressValue]="100" [showValue]="true"></rzProgress>
+
+                <label  class="skill_label">React JS</label>
+                <rzProgress [progressValue]="30" [showValue]="true"></rzProgress>
+
+                <label  class="skill_label">Vue JS</label>
+                <rzProgress [progressValue]="30" [showValue]="true"></rzProgress>
+               </div>
+
+            </div>
+            <div class="col-12 md:col-6 xl:col-6 p-2">
+                <div class="skill_card">
+                    <label  class="skill_label">JQUERY (AJAX)</label>
+                    <rzProgress [progressValue]="100" [showValue]="true"></rzProgress>
+
+                    <label  class="skill_label">Adobe Photoshop</label>
+                    <rzProgress [progressValue]="80" [showValue]="true"></rzProgress>
+
+                    <label  class="skill_label">Cypress.io</label>
+                    <rzProgress [progressValue]="95" [showValue]="true"></rzProgress>
+
+                    <label  class="skill_label">Bootstrap</label>
+                    <rzProgress [progressValue]="100" [showValue]="true"></rzProgress>
+
+                    <label  class="skill_label">PrimeNG</label>
+                    <rzProgress [progressValue]="100" [showValue]="true"></rzProgress>
+
+                    <label  class="skill_label">Telerik Kendo</label>
+                    <rzProgress [progressValue]="95" [showValue]="true"></rzProgress>
+                </div>
+            </div>
+        </div>
+        <div class="grid ">
+            <div class="col-12" style="padding: 30px;">
+                <p class="backend">And Backend technologies like C#, VB.Net, SQL Server, ASP.NET MVC, Entity Framework, SignalR, WCF Services, Restful Api, ...</p>
+            </div>
+        </div>
+    </div>
+    <div class="experience_container" #experienceContainer>
+        <h2 class="container_title">Experience</h2>
+       
+        <div class="grid">
+            <div class="col-12" >
+                <div toggleHeight >
+                    <div class="experience_card" >
+                        <label class="company_lbl">AMJ CO</label><label class="position_lbl">Frontend Developer</label><br>
+                        <span class="period_lbl">2017 to date</span>
+                        <ul>
+                            <li>Developed multiple scalable progressive web applications using latest versions of Angular</li>
+                            <li>Developed an online shopping store to sell software products and a management section to add and edit products</li>
+                            <li>Developed online supporting ticket system in a CRM with online chatting and sending and receiving files, a payment system to handle large number of transactions and other required features</li>
+                            <li>Developed multiple ASP.NET MVC projects with session based user management and highly responsive layouts</li>
+                        </ul>
+                    </div>
+                </div>
+                <div toggleHeight>
+                    <div class="experience_card">
+                        <label class="company_lbl">AMJ CO</label><label class="position_lbl">Backend and Windows Developer</label><br>
+                        <span class="period_lbl">2016 to 2017</span>
+                        <ul>
+                            <li>Contributed to design of multiple SQL Server databases</li>
+                            <li>Developed a Windows application and its SQL Server database for a large asphalt company to manage whole procedure of loading and distributing its products</li>
+                        </ul>
+                    </div>
+                </div>
+               
+                <div toggleHeight>
+                    <div class="experience_card">
+                        <label class="company_lbl">AMJ CO</label><label class="position_lbl">Technical Support</label><br>
+                        <span class="period_lbl">2011 to 2016</span>
+                        <ul>
+                            <li>Worked as the Software Technical Support Team</li>
+                            <li>Setting up and configuring customers databases (SQL Server) and Windows Servers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact_container" #contactContainer>
+        <h2 class="container_title">Contact Me</h2>
+       
+        <div class="grid">
+            <div class="col-12 md:col-4" toggleHeight >
+                <div class="contact_card">
+                    <i class="pi pi-envelope"></i>
+                    <p>Email Me via</p>
+                    <p>RezaMak2@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-12 md:col-4" toggleHeight >
+                <div class="contact_card">
+                    <i class="pi pi-phone"></i>
+                    <p>Call Me via</p>
+                    <p>+989163027008</p>
+                </div>
+            </div>   
+            <div class="col-12 md:col-4" toggleHeight >
+                <div class="contact_card">
+                    <i class="pi pi-linkedin"></i>
+                    <p>Find me on linkedin via</p>
+                    <a href="https://www.linkedin.com/in/reza-makvandi" target="_blank">in/reza-makvandi</a>
+                </div>
+            </div>
+        </div>
+        <div class="grid github">
+            <div class="col-12" style="padding: 30px;">
+                <p class="backend">The source code of this portfolio is available at my <a href="https://github.com/RezaMakvandi/info" target="_blank">github</a> </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+

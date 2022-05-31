@@ -1,0 +1,30 @@
+<div #sidebarContainer class="sidebar_container">
+    <!-- <i class="pi pi-times cursor-pointer closeBtn" (click)="onCloseBtnClick()"></i> -->
+    <ng-content></ng-content>
+    <!-- <div class="side_menues_container">
+        <a class="side_menu"  (click)="scroll('about')">About Me</a>
+        <a class="side_menu"  (click)="scroll('skills')">Skills</a>
+        <a class="side_menu"  (click)="scroll('experience')">Experience </a>
+        <a class="side_menu"  (click)="scroll('contact')">Contact Me </a>
+    </div> -->
+    <div class="grid grid-nogutter sidebar_grid p-2">
+        <div class="flex-grow-1">
+            <div class="col-12">
+                <div class="image_div text-center">
+                    <img src="assets/reza_makvandi.png" class="pic">
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <h1 class="myname">Reza Makvandi</h1>
+                <h2>Frontend Developer</h2>
+                <p>Let's show the world with a better interface!</p>
+            </div>
+        </div>
+        <div class="col-12 about">
+            <h2 class="container_title text-center">About Me</h2>
+            <p class="text-justify">
+                A curious to learn, a self-educated in software development and problem solver. With over 10 years of experience allways welcome new challenges.
+            </p>
+        </div>
+    </div>
+</div>

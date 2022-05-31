@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="image_container">
+        <h1>RM</h1>
+    </div>
+    <div class="menu_container">
+        <div class="menu_item" (click)="scroll('about')">About Me</div>
+        <div class="menu_item" (click)="scroll('skills')">Skills</div>
+        <div class="menu_item" (click)="scroll('experience')">Experience</div>
+        <div class="menu_item" (click)="scroll('contact')">Contact Me</div>
+    </div>
+    <div class="button_container">
+        <i #openSidebarBtn class="pi pi-bars openSidebarBtn" (click)="onOpenSidebarClick()"></i>
+    </div>
+</div>
