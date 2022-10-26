@@ -11,6 +11,8 @@ import {ProgressBarModule} from 'primeng/progressbar';
 import { RzProgressModule } from 'rz-progress';
 import { ToggleHeightDirective } from './directives/toggle-height.directive';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -28,7 +30,13 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     ButtonModule,
     ProgressBarModule,
     BrowserAnimationsModule,
-    RzProgressModule
+    RzProgressModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
     
   ],
   providers: [],
